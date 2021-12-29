@@ -1,0 +1,69 @@
+Hosni Aboshanab@Hosni_Aboshanab MINGW64 ~/Desktop/New folder (2)/lab_git (master)
+$ git log
+commit 1627c86587eb36de7dfbc2c3633fdd48493f6af3 (HEAD -> master, origin/master, origin/HEAD)
+Author: Hosni Aboshanab <hosniaboshanab25@gmail.com>
+Date: Wed Dec 29 11:48:30 2021 +0200
+
+
+
+edit by hosni
+
+
+
+commit c440559460c37c245504379a472fdf411d5250b1
+Author: MostafaKhafaji <abc@example.com>
+Date: Wed Dec 29 11:43:17 2021 +0200
+
+
+
+added navbar
+
+
+
+commit e31f5f2c6c493e8c6fe90d201ad0acc0ecd42a21
+Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+Date: Wed Dec 29 11:33:34 2021 +0200
+
+
+
+edit by Khaled Samir
+
+
+
+commit a255e83e78b0231703ee0a39b71af3bcbbfeb545
+Author: elashry <mohamedhossnyelashry@gmail.com>
+Date: Wed Dec 29 11:29:01 2021 +0200
+
+
+
+mohamed_hosni
+
+
+
+commit 4f1b8e6867e36a4714c7a297c723a1fd4e45d30f
+Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+Date: Wed Dec 29 11:07:09 2021 +0200
+
+
+
+Edit 1
+
+
+
+commit 68d6970747df72d1b543fb2bc051a09b0f12fca4
+Author: MostafaKhafaji <abc@example.com>
+Date: Wed Dec 29 10:04:42 2021 +0200
+
+
+
+added login function and paragraph
+
+
+
+commit 889084ef35f79e150f927f2c076ffc458aef5a5f
+Author: MostafaKhafaji <abc@example.com>
+Date: Wed Dec 29 09:59:18 2021 +0200
+
+
+
+added the 1st version

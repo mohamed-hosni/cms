@@ -191,3 +191,7 @@ function fnName(?param1, param2...){
 // Append to body
 // document.body.append(div);
 // document.body.prepend(div);
+
+
+x=prompt("welcome","welcome to github");
+
