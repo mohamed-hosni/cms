@@ -1,0 +1,219 @@
+1-one from each group create new repo and choose one method git flow  or featuring workflow
+	(if you choose git flow you need to change default branch)
+
+Now we have 2 repo for each one
+
+1-each one create local branch and push it
+	- contribute person will try merge branch of Owner repo
+	- owner of repo will merge any branch to main
+
+git switch -c elashry
+$ git add .
+$ git commit -m "add new branch"
+
+$ git push -u origin elashry
+
+
+2-each one fetch another remote branch
+	- create new local branch and make it remote
+
+	- contribute person try to get update any un-tracked comments without any merge
+--git switch 
+
+
+git switch -c elashry
+$ git add .
+$ git commit -m "add new branch"
+
+$ git push -u origin elashry
+
+
+3- rollback commit from local repo
+	- revert in your local then make new modify and commit it again, but get history before and after that to see what the diff
+	- add you note
+
+
+$ git diff 2e10058b49c9185e986b5e37b70bab9e17f6769e 277be81976f56501f155e51237a1e2c0d74bd9b3
+diff --git a/khaled.js b/khaled.js
+index 6a1c0d7..b520922 100644
+--- a/khaled.js
++++ b/khaled.js
+@@ -5,5 +5,4 @@ console.log("add new branch from elashry")
+
+ console.log("add new branch from elashry 2")
+
+
+
+
+4- rollback make last comment same third comment
+	- get history
+	- add your note
+
+ git reset --hard
+
+
+5- rollback to master commit ( search)
+	- (roll back to head master)
+ 
+$ git reset --hard origin/master
+
+
+6- log last 5 commit
+
+$ git log -5
+
+commit 73239a41140050951187294d7f3499a3b9308497 (HEAD -> elashry, origin/master, origin/khaled1, origin/HEAD, master)
+Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+Date:   Thu Dec 30 16:44:54 2021 +0200
+
+    edit of name
+
+commit 53f6c41b913e9a8286fa1042f71663a9e60c996e
+Merge: 9cf6def c126138
+Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+Date:   Thu Dec 30 16:16:31 2021 +0200
+
+    merge branch 2
+
+commit c126138420c476e574bf9307cf1fb61dd54d5161 (origin/branch1_hosni)
+Author: Hosni Aboshanab <hosniaboshanab25@gmail.com>
+Date:   Thu Dec 30 16:13:54 2021 +0200
+
+    hosni add line
+
+commit 9cf6defa81d1f66c50b138d0f8b4851d69a642c5
+Merge: e9f15ba 4edc984
+Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+Date:   Thu Dec 30 16:08:29 2021 +0200
+
+    merging branches
+
+commit 4edc9840a9bb8cd1f040d90c79d6f73d258bb6af
+Author: elashry <mohamedhossnyelashry@gmail.com>
+:
+
+
+
+7 - display graph commit
+
+
+
+$ git log --graph
+* commit 73239a41140050951187294d7f3499a3b9308497 (HEAD -> elashry, origin/master, origin/khaled1, origin/HEAD, master)
+| Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+| Date:   Thu Dec 30 16:44:54 2021 +0200
+|
+|     edit of name
+|
+*   commit 53f6c41b913e9a8286fa1042f71663a9e60c996e
+|\  Merge: 9cf6def c126138
+| | Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+| | Date:   Thu Dec 30 16:16:31 2021 +0200
+| |
+| |     merge branch 2
+| |
+| * commit c126138420c476e574bf9307cf1fb61dd54d5161 (origin/branch1_hosni)
+| | Author: Hosni Aboshanab <hosniaboshanab25@gmail.com>
+| | Date:   Thu Dec 30 16:13:54 2021 +0200
+| |
+| |     hosni add line
+| |
+| * commit 38f0012453daced0545ed1b525e9a8c74632c4f4
+| | Author: Hosni Aboshanab <hosniaboshanab25@gmail.com>
+| | Date:   Thu Dec 30 15:45:00 2021 +0200
+| |
+| |     edithosni
+| |
+* |   commit 9cf6defa81d1f66c50b138d0f8b4851d69a642c5
+|\ \  Merge: e9f15ba 4edc984
+| | | Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+| | | Date:   Thu Dec 30 16:08:29 2021 +0200
+| | |
+| | |     merging branches
+| | |
+| * | commit 4edc9840a9bb8cd1f040d90c79d6f73d258bb6af
+| | | Author: elashry <mohamedhossnyelashry@gmail.com>
+| | | Date:   Thu Dec 30 16:01:09 2021 +0200
+| | |
+| | |     the second change
+| | |
+| * | commit 1cb784de54d7dab94f2a416bdcd6b6671e7f3df1
+| | | Author: elashry <mohamedhossnyelashry@gmail.com>
+| | | Date:   Thu Dec 30 15:43:52 2021 +0200
+| | |
+| | |     add another line
+| | |
+| * | commit 0ee0ef0103930ade37870284b8bd2f888958ab75
+| |/  Author: elashry <mohamedhossnyelashry@gmail.com>
+| |   Date:   Thu Dec 30 15:29:12 2021 +0200
+| |
+| |       add new line
+| |
+* | commit e9f15bac31df6dbde8355ee6c12062c6100d6b39
+| | Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+| | Date:   Thu Dec 30 15:49:23 2021 +0200
+| |
+| |     first edit
+| |
+* | commit 1d0bcec62a25caf2f8d6997237dc95c716090876
+|/  Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+|   Date:   Thu Dec 30 15:47:28 2021 +0200
+|
+|       merge branches 1
+|
+* commit 6a29de9d480b3cb7e9daea15c6115f27d7868129 (origin/khaled)
+| Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+| Date:   Wed Dec 29 10:42:10 2021 +0200
+|
+|      consol . log
+|
+* commit 40c278bb97bca057352b56d8916a81524c6df1de
+  Author: khaled_edriss <khaledsamiredriss776@gmail.com>
+  Date:   Wed Dec 29 10:37:01 2021 +0200
+
+       my lab 1
+(END)
+
+
+
+
+8- create file
+	- add it to staging area
+	- modify it
+	- switch to another branch
+ $ git add .
+$ git commit -m "message" .
+$ git switch khaled1.
+
+9 -get diff between last comment and first comment
+
+git log
+$ git diff e3eada74a038ca248b05f8516d4e2818bbe4f2f6 40c278bb97bca057352b56d8916a81524c6df1de
+
+
+diff --git a/khaled.js b/khaled.js
+index c72c940..e69de29 100644
+--- a/khaled.js
++++ b/khaled.js
+@@ -1,12 +0,0 @@
+-console.log("hello world");
+-
+-
+-
+-
+-
+-
+-
+-
+-console.log("hosni")
+-
+-var name = prompt ("enter your name");
+(END)
+
+
+
+
+bonus ** restrict push to master with open-PR
+
+report (between rebase and merge) 
+(revert, reset and checkout)
